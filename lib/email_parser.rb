@@ -3,7 +3,10 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-def self.new_from_csv(csv_data)
+class Person
+  attr_accessor :name, :age, :company
+ 
+  def self.new_from_csv(csv_data)
     # Split the CSV data into an array of individual rows.
     rows = csv_data.split("\n")
     # For each row, let's collect a Person instance based on the data
