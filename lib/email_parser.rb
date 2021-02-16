@@ -4,16 +4,20 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  attr_accessor :
+  attr_accessor :email_addresses
  
   def self.parse(csv_data)
+    
+    
+    
+    
     # Split the CSV data into an array of individual rows.
     rows = csv_data.split("\n")
     # For each row, let's collect a Person instance based on the data
     people = rows.collect do |row|
       # Split the row into 3 parts, name, age, company, at the ", "
       data = row.split(", ")
-      name = data[0]
+       = data[0]
       age = data[1]
       company = data[2]
  
