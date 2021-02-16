@@ -4,7 +4,7 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  attr_accessor :name, :age, :company
+  attr_accessor :parse
  
   def self.new_from_csv(csv_data)
     # Split the CSV data into an array of individual rows.
