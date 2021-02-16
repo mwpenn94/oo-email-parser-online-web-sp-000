@@ -7,10 +7,7 @@ class EmailAddressParser
   attr_accessor :email_addresses
  
   def self.parse(csv_data)
-    
-    
-    
-    
+
     # Split the CSV data into an array of individual rows.
     rows = csv_data.split("\n")
     # For each row, let's collect a Person instance based on the data
