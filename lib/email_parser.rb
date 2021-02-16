@@ -12,6 +12,7 @@ class EmailAddressParser
     email_addreses = rows.collect do |row|
       # Split the row into separate email addreses, at the ", " and " "
       data = row.split(", ", " ")
+      data.uniq!
       
       # Make a new instance
       email = self.new # self refers to the EmailAddressParser class. This is EmailAddressParser.new
