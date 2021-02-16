@@ -4,9 +4,9 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  attr_accessor :parse
+  attr_accessor :
  
-  def self.new_from_csv(csv_data)
+  def self.parse(csv_data)
     # Split the CSV data into an array of individual rows.
     rows = csv_data.split("\n")
     # For each row, let's collect a Person instance based on the data
